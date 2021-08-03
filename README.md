@@ -1,9 +1,7 @@
 # html_css_javascript
 작성 : 2021-08-03 
 
-html 기본 레이아웃 구성요소인  
-Header, Nav, Section, Footer을 사용하여  
-간단한 페이지 구현  
+html 기본 레이아웃 구성요소인 Header, Nav, Section, Footer을 사용하여 간단한 페이지 구현  
 
 
 header : 제목 display  
