@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> MY LAYOUT </title>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <style>
+            * { margin:0px;}
+            header { height: 100px; background-color: rgb(223, 166, 166); }
+            nav { float: left; width:150px; height:500px; background-color: #4153b9;}
+            .section { margin-left:150px; margin-bottom: 20px;}
+            .section1 { margin-left:150px; margin-bottom: 20px;}
+            footer { height:100px; background-color: #FFCC00; clear: both;}
+            header, nav, footer, .section { text-align: center;}
+            header, footer { line-height: 100px;}
+            /* nav, section { line-height: 500px;} */
+            .header_menu { background-color: lightsalmon;}
+            .profile_jpg { display: block; width:100%; height: auto; }
+            ul, li { text-align: left; font-weight: bolder; padding-left: 20px;}
+            .profile { margin : 7px;}
+            hr { margin-bottom: 10px;}
+            table { margin-left:auto; margin-right: auto; width: 100%;}
+            img { background-color: #225686;}
+            table, td, tr { border: solid lightgray 1px; border-collapse: collapse;}
+            .border_picture { display: inline-block;  margin:20px; }
+            .head_list { font-size: 15px; line-height: 21px; margin:0px; overflow: hidden; font-weight: bold; font-family: "나눔고딕",NanumGothic,NanumGothicWebFont,"Malgun Gothic","맑은 고딕",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif;}
+            .date_list { opacity: .5;
+                margin-right: 10px;
+                font-size: 14px;
+                letter-spacing: -.3px; font-family: "나눔고딕",NanumGothic,NanumGothicWebFont,"Malgun Gothic","맑은 고딕",Dotum,"돋움",Helvetica,"Apple SD Gothic Neo",sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> header 영역 </h1>
+        </header>
+        <div class ="header_menu">
+            <button> 홈 </button> <button> 프롤로그 </button> <button> 블로그 </button>
+        </div>
+        <nav>
+            <img class = "profile_jpg" src = "profile.jfif"/>
+            <div class = "profile">
+                <p> 아이디 : 00000000 </p>
+                <p> 소개 : 안녕하세요 ^_^ </p>
+            </div>
+            <hr/>
+            <ul>
+                <li> 1번 </li>
+                <li> 2번 </li>
+                    <ul>
+                        <li> 2-1 번 </li>
+                        <li> 2-2 번 </li>
+                        <li> 2-3 번 </li>
+                    </ul>
+                <li> 3번 </li>
+                <li> 4번 </li>
+            </ul>
+        </nav>
+        
+        <section class ="section">
+            <table>
+                <thead>
+                    <tr>
+                        <td> 번호 </td>
+                        <td> 제목 </td>
+                        <td> 작성일 </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 첫 게시글입니다 (1) </td>
+                        <td> 2021.08.03 </td>
+                    </tr>
+                    <tr>
+                        <td> 2 </td>
+                        <td> 두번째 게시글입니다 (1) </td>
+                        <td> 2021.08.04 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class = "section1">
+            <div class = "border_picture">
+                <img src = "repair.png" style="height: 158px; width: auto;"/>
+                <p class ="head_list"> 첫 게시글입니다 </p>
+                <span class = "date_list"> 2021.08. 03 </span>
+                <span style="margin-left: 7px;"> <i class="far fa-sticky-note"></i></span>
+                <span class = "date_list"> 1 </span>
+            </div>
+            <div class = "border_picture">
+                <img src = "find.png" style="height: 158px; width: auto;"/>
+                <p class ="head_list"> 두번째 게시글입니다 </p>
+                <span class = "date_list"> 2021.08. 04 </span>
+                <span style="margin-left: 7px;"> <i class="far fa-sticky-note"></i></span>
+                <span class = "date_list"> 1 </span>
+            </div>
+        </section>
+        <footer>
+            <p> footer 영역 </p>
+        </footer>
+    </body>
+</html>
