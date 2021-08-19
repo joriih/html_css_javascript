@@ -1,0 +1,265 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button> 종료 </button>
+    <button> 시작 </button>
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color : white; 
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button> 종료 </button>
+    <button> 시작 </button>
+    <div> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>
+    <div> 4 </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color : white; 
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #rec_right {
+            animation-name : rec_right;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+         }
+    </style>
+</head>
+<body>
+    <button> 종료 </button>
+    <button> 시작 </button>
+    <div id = "rec_right"> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>
+    <div> 4 </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color : white; 
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #rec_right {
+            animation-name : rec_right;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+         }
+        @keyframes rec_right {
+            0% { }
+            100% { margin-left: 400px; }
+        }
+    </style>
+</head>
+<body>
+    <button> 종료 </button>
+    <button> 시작 </button>
+    <div id = "rec_right"> 1 </div>
+    <div> 2 </div>
+    <div> 3 </div>
+    <div> 4 </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color : white; 
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #rec_right {
+            animation-name : rec_right;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+         }
+        @keyframes rec_right {
+            0% { }
+            100% { margin-left: 400px; }
+        }
+        #rec_to_circle{
+            animation-name : rec_to_circle;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        @keyframes rec_to_circle {
+            0% { }
+            100% { border-radius: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <button> 종료 </button>
+    <button> 시작 </button>
+    <div id = "rec_right"> 1 </div>
+    <div id = "rec_to_circle"> 2 </div>
+    <div> 3 </div>
+    <div> 4 </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            color : white; 
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+        #rec_right {
+            animation-name : rec_right;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+         }
+        @keyframes rec_right {
+            0% { }
+            100% { margin-left: 400px; }
+        }
+        #rec_to_circle{
+            animation-name : rec_to_circle;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        @keyframes rec_to_circle {
+            0% { }
+            100% { border-radius: 100%; }
+        }
+        #rotate{
+            animation-name : rotate;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+        @keyframes rotate {
+            0% { }
+            100% { transform: rotate(-1turn); }
+        }
+        #all{
+            animation-name : all;
+            animation-duration: 5s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            /* animation-timing-function: ; */
+        }
+        @keyframes all {
+            0% { }
+            100% { 
+                /* border-radius: 100%; */
+                margin-left: 400px;
+                transform: rotate(10turn); }
+        }
+        #stair{
+            animation-name : stair;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+        @keyframes stair {
+            0% { }
+            50% { 
+                /* border-radius: 100%; */
+                margin-left : 400px;
+                margin-top : 0px;}
+            100% { 
+                /* border-radius: 100%; */
+                
+                margin-left : 400px;
+                margin-top: 100px; }
+        }
+    </style>
+</head>
+<body>
+    <button> 종료 </button>
+    <button> 시작 </button>
+    <div id = "rec_right"> 1 </div>
+    <div id = "rec_to_circle"> 2 </div>
+    <div id = "rotate"> 3 </div>
+    <div id = "all"> 4 </div>
+    <div id = "stair"> 5 </div>
+</body>
+</html>
