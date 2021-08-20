@@ -17,3 +17,5 @@ rotate : 한바퀴 회전하는 애니메이션
 all : 위에 세가지 동시에 진행하는 애니메이션  
 stair : 계단식으로 내려가는 애니메이션  
 
+
+https://codepen.io/shounak-ghosh/pen/OBPOeY
