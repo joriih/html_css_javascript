@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+    <button id = "shuffle" onclick="card_shuffle()"> 카드섞기 </button>
+    <button id = "fold" onclick="card_fold()"> 카드 접기 </button>
+    <button id = "spread" onclick="card_spread()"> 카드 펼치기 </button>
+    <div id = "img_location">
+    </div>
+    <script>
+        function shuffle(array) {
+             array.sort(() => Math.random() - 0.5);
+        }
+        function card_shuffle(){
+
+            $("#img_location").empty();
+            var arr = ['img1','img2','img3','img4','img5','img6'];
+            shuffle(arr);
+            console.log(arr);
+            for (var i in arr){
+                console.log(arr[i]);
+                var row = `<button id = "` +arr[i] + `">` + arr[i] + `</button>`;
+                console.log(row);
+                $('#img_location').append(row);
+            }
+        }
+    </script>
+    <script>
+        function card_fold(){
+            var arr = document.getElementsByTagName("button");
+            for(var i = 3; i <=8; i ++){
+                document.getElementsByTagName("button")[i].style = "position:absolute;";
+            }
+        }
+        function card_spread(){
+            var arr = document.getElementsByTagName("button");
+            for(var i = 3; i <=8; i ++){
+                document.getElementsByTagName("button")[i].style = "position:relative;";
+            }
+        }
+    </script>
+
+</body>
+</html>
