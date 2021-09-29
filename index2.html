@@ -8,85 +8,74 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <title> 2021 Portfolio </title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-        h4 { font-family: 'Dancing Script', cursive; }
-
-    </style>
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>GiGA Service Checker</title>
+      <style>
+        h1 { text-align : center; }
+        #section { background-color : #f2f2f2; padding-top : 100px; padding-bottom: 100px;}
+        .card { border-radius : 25px; max-width : 340px; min-width: 300px; height: 200px; display : inline-block;}
+          .title { font-family: "Noto Sans Medium"; font-weight: bold; letter-spacing: -0.9px; font-size: 2rem;
+          margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; }
+          .card_notice { width : 100%;  height :70px; min-width: 300px; max-width: 1440px;}
+      </style>
   </head>
   <body>
-    <!-- Image and text -->
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">
-        <img src="../static/emoji.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        2021 Portfolio
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active" href="#">Home</span></a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
+    <h1> GIGA Service Checker </h1>
+    <div id = "section" style="text-align:center;">
+        <div style = "display:inline-block;">
+            <div>
+                <div style = "margin-bottom: 30px;">
+                    <span class = "title" > 이런 서비스를 찾으시나요?</span>
+                </div>
+
+               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">품질진단</h5>
+                        <p class="card-text"> TV, 인터넷이 이상하다면?</p>
+                        <p class="card-text"> 간편하게 E2E 구간 품질진단</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">업셀링</h5>
+                        <p class="card-text">업셀링이 필요한 고객이라면?</p>
+                        <p class="card-text"> 간편하게 업셀링 요청</p>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">해지징후</h5>
+                        <p class="card-text">해지징후가 포착되는 고객이라면?</p>
+                        <p class="card-text"> 간편하게 해지 방어 요청</p>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">이전요청이력</h5>
+                        <p class="card-text"> 이전에 요청했던 이력이 보고싶다면?</p>
+                        <p class="card-text"> 이곳에서 이력확인 </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card_notice">
+                  <div class="card-body">
+                    <h5 class="card-title">공지</h5>
+                  </div>
+                </div>
+
+
         </div>
-      </div>
-    </nav>
-
-    <!--nav bar 를 제외한 div 영역-->
-    <div class="container-fluid">
-    <!--사진이 들어갈 div 영역-->
-
-      <div class = "row image_div">
-<!--          <div class = "col-sm-2"></div>-->
-          <div class = "col-sm-4" style = "margin-left: 3vw; margin-right: 3vw;">
-              <h4 style = "margin-top:30px;" > @my name </h4>
-              <img src = "../static/character.jpeg" style="width: 100%; max-width: 320px; min-width : 270px;"/>
-
-              <div style="width: 100%; max-width: 320px; min-width : 270px;">
-                <div class="form-row float-left">
-                    <i id = "heart" class="bi bi-heart pull-left" style="font-size: 1.2rem;" onclick="click_heart()"></i>
-                    <span style="margin-left: 1rem;"></span>
-                    <i id = "trophy" class="bi bi-trophy" style="font-size: 1.2rem;" onclick="click_trophy()"></i>
-                </div>
-                <div class="form-row float-right">
-                    <i id = "message" class="bi bi-chat-right-text pull-right" style="font-size: 1.2rem;" onclick="message()"></i>
-                </div>
-              </div>
-          </div>
-          <!--댓글처럼 영역-->
-          <div id ="comment" class = "col-sm-4" style="text-align:center; max-width : 350px;margin-left: 2vw; margin-right: 3vw;">
-              <p style = "margin-top:50px; "> <strong> PROFILE </strong> </p>
-              <hr/>
-              <p  > 이름 : XXX </p>
-              <p> 생년월일 : 1996.10.23 </p>
-              <p> 한줄소개 :  </p>
-
-              <p style = "margin-top:30px; "> <strong>CONTACT</strong> </p>
-              <hr/>
-              <p> 연락처 : 010-XXXX-XXXX </p>
-              <p> e-mail : XXXXXXXX@naver.com </p>
-              <p> 인스타그램 : @instagram_id </p>
-          </div>
-          <div id ="comment2" class = "col-sm-4" style="text-align:center; max-width : 350px;margin-left: 2vw; margin-right: 3vw;">
-              <p style = "margin-top:50px; "> <strong> PROFILE </strong> </p>
-              <hr/>
-              <p  > 이름 : XXX </p>
-              <p> 생년월일 : 1996.10.23 </p>
-              <p> 한줄소개 :  </p>
-
-              <p style = "margin-top:30px; "> <strong>CONTACT</strong> </p>
-              <hr/>
-              <p> 연락처 : 010-XXXX-XXXX </p>
-              <p> e-mail : XXXXXXXX@naver.com </p>
-              <p> 인스타그램 : @instagram_id </p>
-          </div>
-      </div>
-
     </div>
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -100,28 +89,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
     -->
-  <script>
-      function click_heart() {
-          document.getElementById('heart').classList.toggle('bi-heart');
-          document.getElementById('heart').classList.toggle('bi-heart-fill');
-      }
-      function click_trophy() {
-          document.getElementById('trophy').classList.toggle('bi-trophy');
-          document.getElementById('trophy').classList.toggle('bi-trophy-fill');
-      }
-      var count = 0;
-      function message(){
-          count += 1;
-          if(count %2 != 0){
-            document.getElementById('message').classList.toggle('bi-chat-right-text');
-            document.getElementById('comment').style.display = "none";
-            document.getElementById('message').classList.toggle('bi-chat-right-text-fill');
-          }else{
-            document.getElementById('message').classList.toggle('bi-chat-right-text-fill');
-            document.getElementById('comment').style.display = "block";
-            document.getElementById('message').classList.toggle('bi-chat-right-text');
-          }
-      }
-  </script>
   </body>
 </html>
