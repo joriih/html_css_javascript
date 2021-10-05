@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    https://gahyun-web-diary.tistory.com/178-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://wowjs.uk/css/libs/animate.css">
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <style>
+        .circle {
+          margin: 25px 10px;
+          width: 200px;
+          color: #fff;
+          font-size: 32px;
+          line-height: 200px;
+          text-align: center;
+          height: 200px;
+          border-radius: 100px;
+        }
+        .bg-green {
+          background: #5bd5a0;
+        }
+        .bg-yellow {
+          background: #ffcc35;
+        }
+        .wow {
+        border:1px solid black; }
+        .vertical-text {
+            font-size: 3rem;
+            transform: rotate(270deg);
+            transform-origin: left top;
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div data-wow-delay="0.5s" class="wow ">
+        <div class= "vertical-text" style="float:left;
+            margin-top: 100px;"> 2021 </div>
+        <div>
+            <p> WEB DESIGNING </p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo </p>
+        </div>
+
+    </div>
+    <div data-wow-delay="0.5s" data-wow-offset="10" class="wow bounceInDown" style="margin-top:200px;">
+        <div>
+            <p> WEB DEVELOPMENT </p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo </p>
+        </div>
+        <div class= "vertical-text" style="float:right;"> 2020 </div>
+    </div>
+    <div data-wow-delay="1s"  data-wow-offset="30"  class="wow rotateIn">
+        <div>
+            <p> JAVASCRIPT </p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo </p>
+        </div>
+    </div>
+    <div data-wow-delay="0.5s" class="wow zoomIn">
+      <div>
+            <p> WEB DESIGNING </p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo </p>
+        </div>
+    </div>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
